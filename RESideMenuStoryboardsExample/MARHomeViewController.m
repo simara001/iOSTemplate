@@ -9,6 +9,7 @@
 #import "MARHomeViewController.h"
 #import "UIColor+CoolColors.h"
 #import "STHTTPRequest.h"
+#import <Parse/Parse.h>
 
 @interface MARHomeViewController ()
 
@@ -29,6 +30,19 @@
     [self.navigationController.navigationBar setBarTintColor:[UIColor coolPurple]];
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
     [self callDilbert];
+    
+    /* * * * * * * * * * * * * * * * *
+     * Logging In with Demo User to
+     * Parse
+     * * * * * * * * * * * * * * * * */
+    [PFUser logInWithUsernameInBackground:@"myname" password:@"mypass"
+                                    block:^(PFUser *user, NSError *error) {
+                                        if (user) {
+                                            // Do stuff after successful login.
+                                        } else {
+                                            // The login failed. Check error to see why.
+                                        }
+                                    }];
 }
 
 

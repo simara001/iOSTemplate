@@ -7,12 +7,16 @@
 //
 
 #import "MARAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation MARAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"alZRiWd2nZkGbC1Rc1rrOEUr9Aani4AmRJZtVdyF"
+                  clientKey:@"n06hhmkG5JBOMSPiko9Tt7e4KRSMTwScB7VcQISK"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
 }
 							
