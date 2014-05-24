@@ -27,6 +27,7 @@
 		7FE14D941930330100517D5D /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D901930330100517D5D /* RESideMenu.m */; };
 		7FE14D951930330100517D5D /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D921930330100517D5D /* UIViewController+RESideMenu.m */; };
 		7FE14D98193039AC00517D5D /* UIColor+CoolColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D97193039AC00517D5D /* UIColor+CoolColors.m */; };
+		7FE14D9B1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D9A1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		7FE14D921930330100517D5D /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
 		7FE14D96193039AC00517D5D /* UIColor+CoolColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CoolColors.h"; sourceTree = "<group>"; };
 		7FE14D97193039AC00517D5D /* UIColor+CoolColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CoolColors.m"; sourceTree = "<group>"; };
+		7FE14D991930413B00517D5D /* NSObject+PerformBlockAfterDelay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformBlockAfterDelay.h"; sourceTree = "<group>"; };
+		7FE14D9A1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformBlockAfterDelay.m"; sourceTree = "<group>"; };
 		8B8B75F4E1784E778617769A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -168,6 +171,8 @@
 				3076CE001809B59E00527E6C /* MARProfileViewController.m */,
 				7FE14D96193039AC00517D5D /* UIColor+CoolColors.h */,
 				7FE14D97193039AC00517D5D /* UIColor+CoolColors.m */,
+				7FE14D991930413B00517D5D /* NSObject+PerformBlockAfterDelay.h */,
+				7FE14D9A1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				3076CDD21809B47200527E6C /* MARAppDelegate.m in Sources */,
 				3076CE051809B59E00527E6C /* MARProfileViewController.m in Sources */,
 				7FE14D98193039AC00517D5D /* UIColor+CoolColors.m in Sources */,
+				7FE14D9B1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m in Sources */,
 				3076CE041809B59E00527E6C /* MARCoordinatorViewController.m in Sources */,
 				7FE14D931930330100517D5D /* RECommonFunctions.m in Sources */,
 				7FE14D951930330100517D5D /* UIViewController+RESideMenu.m in Sources */,
