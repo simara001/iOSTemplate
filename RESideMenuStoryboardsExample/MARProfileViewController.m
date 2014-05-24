@@ -15,7 +15,9 @@
 
 @end
 
-@implementation MARProfileViewController
+@implementation MARProfileViewController {
+    __strong CSAnimationView *animatedView;
+}
 
 #pragma mark - Default methods
 
@@ -24,9 +26,9 @@
     /* * * * * * * * * * * * * * * * *
      * Starting CSAnimationView
      * * * * * * * * * * * * * * * * */
-    CSAnimationView *animatedView = [[CSAnimationView alloc] initWithFrame:CGRectMake(self.view.frame.size.width/8, 25, self.view.frame.size.width/2, self.view.frame.size.height/2)];
-    animatedView.type = @"pop";
-    animatedView.delay = 0.5;
+    animatedView = [[CSAnimationView alloc] initWithFrame:CGRectMake(self.view.frame.size.width/8, 25, self.view.frame.size.width/2, self.view.frame.size.height/2)];
+    animatedView.type = @"bounceLeft";
+    animatedView.delay = 0.2;
     animatedView.duration = 0.5;
     animatedView.backgroundColor = [UIColor clearColor];
     
@@ -37,7 +39,11 @@
     showingLabel.text = @"This is an example of how to create animated labels programatically using Canvas";
     showingLabel.numberOfLines = 5;
     showingLabel.textAlignment = NSTextAlignmentCenter;
+    [showingLabel setFont:[UIFont fontWithName:@"Avenir-Light" size:18]];
     
+    /* * * * * * * * * * * * * * * * *
+     * Adding subviews
+     * * * * * * * * * * * * * * * * */
     [animatedView addSubview:showingLabel];
     [self.view addSubview:animatedView];
     [animatedView startCanvasAnimation];
@@ -50,12 +56,8 @@
     [self.sideMenuViewController presentMenuViewController];
 }
 
-- (IBAction)pushController:(id)sender
-{
-    UIViewController *viewController = [[UIViewController alloc] init];
-    viewController.title = @"Subview";
-    viewController.view.backgroundColor = [UIColor whiteColor];
-    [self.navigationController pushViewController:viewController animated:YES];
+- (IBAction)animateText:(id)sender {
+    [animatedView startCanvasAnimation];
 }
 
 

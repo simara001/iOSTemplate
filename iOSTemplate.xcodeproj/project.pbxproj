@@ -28,6 +28,7 @@
 		7FE14D951930330100517D5D /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D921930330100517D5D /* UIViewController+RESideMenu.m */; };
 		7FE14D98193039AC00517D5D /* UIColor+CoolColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D97193039AC00517D5D /* UIColor+CoolColors.m */; };
 		7FE14D9B1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D9A1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m */; };
+		7FE14DA019304D7700517D5D /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D9F19304D7700517D5D /* STHTTPRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		7FE14D97193039AC00517D5D /* UIColor+CoolColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CoolColors.m"; sourceTree = "<group>"; };
 		7FE14D991930413B00517D5D /* NSObject+PerformBlockAfterDelay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformBlockAfterDelay.h"; sourceTree = "<group>"; };
 		7FE14D9A1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformBlockAfterDelay.m"; sourceTree = "<group>"; };
+		7FE14D9E19304D7700517D5D /* STHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHTTPRequest.h; sourceTree = "<group>"; };
+		7FE14D9F19304D7700517D5D /* STHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHTTPRequest.m; sourceTree = "<group>"; };
 		8B8B75F4E1784E778617769A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				7FE14D8C1930330100517D5D /* RESideMenu */,
-				3076CDC71809B47200527E6C /* RESideMenuStoryboardsExample */,
+				3076CDC71809B47200527E6C /* MARSideMenu */,
 				3076CDC01809B47200527E6C /* Frameworks */,
 				3076CDBF1809B47200527E6C /* Products */,
 				4A6C1B6B8BEC456C9E23258E /* Pods.xcconfig */,
@@ -134,15 +137,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3076CDC71809B47200527E6C /* RESideMenuStoryboardsExample */ = {
+		3076CDC71809B47200527E6C /* MARSideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				7FE14D9D19304D6B00517D5D /* External Libraries */,
+				7FE14D9C19304CCD00517D5D /* Categories */,
 				3076CDF61809B50100527E6C /* Controllers */,
 				3076CDD01809B47200527E6C /* MARAppDelegate.h */,
 				3076CDD11809B47200527E6C /* MARAppDelegate.m */,
 				3076CDD31809B47200527E6C /* Main.storyboard */,
 				3076CDC81809B47200527E6C /* Supporting Files */,
 			);
+			name = MARSideMenu;
 			path = RESideMenuStoryboardsExample;
 			sourceTree = "<group>";
 		};
@@ -169,10 +175,6 @@
 				3076CDFE1809B59E00527E6C /* MARCoordinatorViewController.m */,
 				3076CDFF1809B59E00527E6C /* MARProfileViewController.h */,
 				3076CE001809B59E00527E6C /* MARProfileViewController.m */,
-				7FE14D96193039AC00517D5D /* UIColor+CoolColors.h */,
-				7FE14D97193039AC00517D5D /* UIColor+CoolColors.m */,
-				7FE14D991930413B00517D5D /* NSObject+PerformBlockAfterDelay.h */,
-				7FE14D9A1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -188,6 +190,26 @@
 				7FE14D921930330100517D5D /* UIViewController+RESideMenu.m */,
 			);
 			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		7FE14D9C19304CCD00517D5D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7FE14D96193039AC00517D5D /* UIColor+CoolColors.h */,
+				7FE14D97193039AC00517D5D /* UIColor+CoolColors.m */,
+				7FE14D991930413B00517D5D /* NSObject+PerformBlockAfterDelay.h */,
+				7FE14D9A1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		7FE14D9D19304D6B00517D5D /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7FE14D9E19304D7700517D5D /* STHTTPRequest.h */,
+				7FE14D9F19304D7700517D5D /* STHTTPRequest.m */,
+			);
+			name = "External Libraries";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +350,7 @@
 				3076CDCE1809B47200527E6C /* main.m in Sources */,
 				3076CDD21809B47200527E6C /* MARAppDelegate.m in Sources */,
 				3076CE051809B59E00527E6C /* MARProfileViewController.m in Sources */,
+				7FE14DA019304D7700517D5D /* STHTTPRequest.m in Sources */,
 				7FE14D98193039AC00517D5D /* UIColor+CoolColors.m in Sources */,
 				7FE14D9B1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m in Sources */,
 				3076CE041809B59E00527E6C /* MARCoordinatorViewController.m in Sources */,

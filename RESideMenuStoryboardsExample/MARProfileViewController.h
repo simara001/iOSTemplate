@@ -12,6 +12,6 @@
 @interface MARProfileViewController : UIViewController
 
 - (IBAction)showMenu;
-- (IBAction)pushController:(id)sender;
+- (IBAction)animateText:(id)sender;
 
 @end

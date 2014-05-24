@@ -20,7 +20,7 @@
 {
     self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentController"];
     self.menuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"menuController"];
-    self.backgroundImage = [UIImage imageNamed:@"Stars"];
+    self.backgroundImage = [UIImage imageNamed:@"GreenBlur"];
     self.delegate = (MARMenuViewController *)self.menuViewController;
     [self.navigationController.navigationBar setBarTintColor:[UIColor coolRed]];
 }

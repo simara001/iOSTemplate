@@ -18,7 +18,6 @@
 - (IBAction)showMenu
 {
     [self.sideMenuViewController presentMenuViewController];
-    [self.navigationController.navigationBar setBarTintColor:[UIColor coolBlue]];
 }
 
 @end
