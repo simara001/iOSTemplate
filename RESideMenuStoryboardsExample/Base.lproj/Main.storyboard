@@ -39,21 +39,41 @@
             </objects>
             <point key="canvasLocation" x="923" y="298"/>
         </scene>
-        <!--Home View Controller - Home Controller-->
+        <!--Home View Controller - Home-->
         <scene sceneID="4d1-Jz-tGk">
             <objects>
                 <viewController storyboardIdentifier="MARHomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jsP-Dz-DYG" customClass="MARHomeViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NKZ-RZ-CBv">
+                    <view key="view" contentMode="scaleToFill" id="NKZ-RZ-CBv" customClass="CSBlurView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balloon" id="sCD-GZ-hDv">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" id="mjC-tG-aSQ" customClass="CSAnimationView">
+                                <rect key="frame" x="51" y="106" width="218" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a beautiful Typeface (Avenir Next), animated using Canvas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dAy-RE-S3f">
+                                        <rect key="frame" x="20" y="20" width="178" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="bounceLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home Controller" id="HIf-bS-REK">
+                    <navigationItem key="navigationItem" title="Home" id="HIf-bS-REK">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="SZg-Pf-I50">
                             <connections>
                                 <action selector="showMenu" destination="jsP-Dz-DYG" id="Fp7-R0-lXj"/>
@@ -113,9 +133,6 @@
             <point key="canvasLocation" x="1470" y="979"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Balloon" width="320" height="568"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

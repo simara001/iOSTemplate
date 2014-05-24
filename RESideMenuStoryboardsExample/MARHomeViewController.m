@@ -7,6 +7,7 @@
 //
 
 #import "MARHomeViewController.h"
+#import "UIColor+CoolColors.h"
 
 @interface MARHomeViewController ()
 
@@ -17,7 +18,7 @@
 - (IBAction)showMenu
 {
     [self.sideMenuViewController presentMenuViewController];
-    NSLog(@"Home");
+    [self.navigationController.navigationBar setBarTintColor:[UIColor yellowColor]];
 }
 
 @end
