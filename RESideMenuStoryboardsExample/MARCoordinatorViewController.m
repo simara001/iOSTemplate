@@ -8,6 +8,7 @@
 
 #import "MARCoordinatorViewController.h"
 #import "MARMenuViewController.h"
+#import "UIColor+CoolColors.h"
 
 @interface MARCoordinatorViewController ()
 
@@ -21,6 +22,7 @@
     self.menuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"menuController"];
     self.backgroundImage = [UIImage imageNamed:@"Stars"];
     self.delegate = (MARMenuViewController *)self.menuViewController;
+    [self.navigationController.navigationBar setBarTintColor:[UIColor coolRed]];
 }
 
 @end

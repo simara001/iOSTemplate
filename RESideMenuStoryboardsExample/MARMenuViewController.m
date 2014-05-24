@@ -10,6 +10,7 @@
 #import "MARHomeViewController.h"
 #import "MARProfileViewController.h"
 #import "UIViewController+RESideMenu.h"
+#import "UIColor+CoolColors.h"
 
 @interface MARMenuViewController ()
 
@@ -36,6 +37,7 @@
         tableView;
     });
     [self.view addSubview:self.tableView];
+
 }
 
 #pragma mark -
