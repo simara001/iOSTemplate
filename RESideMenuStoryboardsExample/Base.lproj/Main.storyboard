@@ -75,6 +75,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="HIf-bS-REK">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="SZg-Pf-I50">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="showMenu" destination="jsP-Dz-DYG" id="Fp7-R0-lXj"/>
                             </connections>
@@ -123,6 +124,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="8VR-6H-mGr">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="3gh-ed-0Ek">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="showMenu" destination="yGP-ij-jME" id="ZoY-gJ-XvS"/>
                             </connections>

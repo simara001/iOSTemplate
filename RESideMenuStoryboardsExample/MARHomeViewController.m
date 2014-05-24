@@ -20,4 +20,13 @@
     [self.sideMenuViewController presentMenuViewController];
 }
 
+-(void)viewDidLoad {
+    /* * * * * * * * * * * * * * * * *
+     * Customizing the Nav Bar
+     * * * * * * * * * * * * * * * * */
+    [self.navigationController.navigationBar setBarTintColor:[UIColor coolPurple]];
+    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
+    
+}
+
 @end
