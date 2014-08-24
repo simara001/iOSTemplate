@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2EB0E50205CD40EFB6122C46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8B75F4E1784E778617769A /* libPods.a */; };
 		3076CDC21809B47200527E6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3076CDC11809B47200527E6C /* Foundation.framework */; };
 		3076CDC41809B47200527E6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3076CDC31809B47200527E6C /* CoreGraphics.framework */; };
 		3076CDC61809B47200527E6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3076CDC51809B47200527E6C /* UIKit.framework */; };
@@ -23,6 +22,18 @@
 		3076CE021809B59E00527E6C /* MARMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3076CDFA1809B59E00527E6C /* MARMenuViewController.m */; };
 		3076CE041809B59E00527E6C /* MARCoordinatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3076CDFE1809B59E00527E6C /* MARCoordinatorViewController.m */; };
 		3076CE051809B59E00527E6C /* MARProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3076CE001809B59E00527E6C /* MARProfileViewController.m */; };
+		7F5E41E719A99CD100B876DA /* CSAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41D219A99CD100B876DA /* CSAnimation.m */; };
+		7F5E41E819A99CD100B876DA /* CSAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41D419A99CD100B876DA /* CSAnimationView.m */; };
+		7F5E41E919A99CD100B876DA /* CSBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41D619A99CD100B876DA /* CSBlurView.m */; };
+		7F5E41EA19A99CD100B876DA /* CSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41D819A99CD100B876DA /* CSNavigationController.m */; };
+		7F5E41EB19A99CD100B876DA /* UIButton+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41DA19A99CD100B876DA /* UIButton+TCCustomFont.m */; };
+		7F5E41EC19A99CD100B876DA /* UILabel+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41DC19A99CD100B876DA /* UILabel+TCCustomFont.m */; };
+		7F5E41ED19A99CD100B876DA /* UINavigationBar+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41DE19A99CD100B876DA /* UINavigationBar+TCCustomFont.m */; };
+		7F5E41EE19A99CD100B876DA /* UITextField+PlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41E019A99CD100B876DA /* UITextField+PlaceholderColor.m */; };
+		7F5E41EF19A99CD100B876DA /* UITextField+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41E219A99CD100B876DA /* UITextField+TCCustomFont.m */; };
+		7F5E41F019A99CD100B876DA /* UITextView+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41E419A99CD100B876DA /* UITextView+TCCustomFont.m */; };
+		7F5E41F119A99CD100B876DA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7F5E41E519A99CD100B876DA /* LICENSE */; };
+		7F5E41F219A99CD100B876DA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7F5E41E619A99CD100B876DA /* README.md */; };
 		7FE14D931930330100517D5D /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D8E1930330100517D5D /* RECommonFunctions.m */; };
 		7FE14D941930330100517D5D /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D901930330100517D5D /* RESideMenu.m */; };
 		7FE14D951930330100517D5D /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D921930330100517D5D /* UIViewController+RESideMenu.m */; };
@@ -77,7 +88,28 @@
 		3076CDFE1809B59E00527E6C /* MARCoordinatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARCoordinatorViewController.m; sourceTree = "<group>"; };
 		3076CDFF1809B59E00527E6C /* MARProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MARProfileViewController.h; sourceTree = "<group>"; };
 		3076CE001809B59E00527E6C /* MARProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARProfileViewController.m; sourceTree = "<group>"; };
-		4A6C1B6B8BEC456C9E23258E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		7F5E41D119A99CD100B876DA /* CSAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAnimation.h; sourceTree = "<group>"; };
+		7F5E41D219A99CD100B876DA /* CSAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAnimation.m; sourceTree = "<group>"; };
+		7F5E41D319A99CD100B876DA /* CSAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAnimationView.h; sourceTree = "<group>"; };
+		7F5E41D419A99CD100B876DA /* CSAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAnimationView.m; sourceTree = "<group>"; };
+		7F5E41D519A99CD100B876DA /* CSBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBlurView.h; sourceTree = "<group>"; };
+		7F5E41D619A99CD100B876DA /* CSBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBlurView.m; sourceTree = "<group>"; };
+		7F5E41D719A99CD100B876DA /* CSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNavigationController.h; sourceTree = "<group>"; };
+		7F5E41D819A99CD100B876DA /* CSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSNavigationController.m; sourceTree = "<group>"; };
+		7F5E41D919A99CD100B876DA /* UIButton+TCCustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TCCustomFont.h"; sourceTree = "<group>"; };
+		7F5E41DA19A99CD100B876DA /* UIButton+TCCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TCCustomFont.m"; sourceTree = "<group>"; };
+		7F5E41DB19A99CD100B876DA /* UILabel+TCCustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TCCustomFont.h"; sourceTree = "<group>"; };
+		7F5E41DC19A99CD100B876DA /* UILabel+TCCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TCCustomFont.m"; sourceTree = "<group>"; };
+		7F5E41DD19A99CD100B876DA /* UINavigationBar+TCCustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+TCCustomFont.h"; sourceTree = "<group>"; };
+		7F5E41DE19A99CD100B876DA /* UINavigationBar+TCCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+TCCustomFont.m"; sourceTree = "<group>"; };
+		7F5E41DF19A99CD100B876DA /* UITextField+PlaceholderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceholderColor.h"; sourceTree = "<group>"; };
+		7F5E41E019A99CD100B876DA /* UITextField+PlaceholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceholderColor.m"; sourceTree = "<group>"; };
+		7F5E41E119A99CD100B876DA /* UITextField+TCCustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+TCCustomFont.h"; sourceTree = "<group>"; };
+		7F5E41E219A99CD100B876DA /* UITextField+TCCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+TCCustomFont.m"; sourceTree = "<group>"; };
+		7F5E41E319A99CD100B876DA /* UITextView+TCCustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+TCCustomFont.h"; sourceTree = "<group>"; };
+		7F5E41E419A99CD100B876DA /* UITextView+TCCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+TCCustomFont.m"; sourceTree = "<group>"; };
+		7F5E41E519A99CD100B876DA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7F5E41E619A99CD100B876DA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		7FE14D8D1930330100517D5D /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
 		7FE14D8E1930330100517D5D /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
 		7FE14D8F1930330100517D5D /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
@@ -103,7 +135,6 @@
 		7FE14DB51930582900517D5D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		7FE14DB719310D9100517D5D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		7FE14DB919310DE900517D5D /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		8B8B75F4E1784E778617769A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +157,6 @@
 				3076CDC61809B47200527E6C /* UIKit.framework in Frameworks */,
 				7FE14DB61930582900517D5D /* FacebookSDK.framework in Frameworks */,
 				3076CDC21809B47200527E6C /* Foundation.framework in Frameworks */,
-				2EB0E50205CD40EFB6122C46 /* libPods.a in Frameworks */,
 				7FE14DA21930554600517D5D /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +181,6 @@
 				3076CDC71809B47200527E6C /* MARSideMenu */,
 				3076CDC01809B47200527E6C /* Frameworks */,
 				3076CDBF1809B47200527E6C /* Products */,
-				4A6C1B6B8BEC456C9E23258E /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,7 +213,6 @@
 				3076CDC31809B47200527E6C /* CoreGraphics.framework */,
 				3076CDC51809B47200527E6C /* UIKit.framework */,
 				3076CDE01809B47200527E6C /* XCTest.framework */,
-				8B8B75F4E1784E778617769A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,6 +259,43 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		7F5E41CF19A99CD100B876DA /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				7F5E41D019A99CD100B876DA /* CanvasLibrary */,
+				7F5E41E519A99CD100B876DA /* LICENSE */,
+				7F5E41E619A99CD100B876DA /* README.md */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		7F5E41D019A99CD100B876DA /* CanvasLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				7F5E41D119A99CD100B876DA /* CSAnimation.h */,
+				7F5E41D219A99CD100B876DA /* CSAnimation.m */,
+				7F5E41D319A99CD100B876DA /* CSAnimationView.h */,
+				7F5E41D419A99CD100B876DA /* CSAnimationView.m */,
+				7F5E41D519A99CD100B876DA /* CSBlurView.h */,
+				7F5E41D619A99CD100B876DA /* CSBlurView.m */,
+				7F5E41D719A99CD100B876DA /* CSNavigationController.h */,
+				7F5E41D819A99CD100B876DA /* CSNavigationController.m */,
+				7F5E41D919A99CD100B876DA /* UIButton+TCCustomFont.h */,
+				7F5E41DA19A99CD100B876DA /* UIButton+TCCustomFont.m */,
+				7F5E41DB19A99CD100B876DA /* UILabel+TCCustomFont.h */,
+				7F5E41DC19A99CD100B876DA /* UILabel+TCCustomFont.m */,
+				7F5E41DD19A99CD100B876DA /* UINavigationBar+TCCustomFont.h */,
+				7F5E41DE19A99CD100B876DA /* UINavigationBar+TCCustomFont.m */,
+				7F5E41DF19A99CD100B876DA /* UITextField+PlaceholderColor.h */,
+				7F5E41E019A99CD100B876DA /* UITextField+PlaceholderColor.m */,
+				7F5E41E119A99CD100B876DA /* UITextField+TCCustomFont.h */,
+				7F5E41E219A99CD100B876DA /* UITextField+TCCustomFont.m */,
+				7F5E41E319A99CD100B876DA /* UITextView+TCCustomFont.h */,
+				7F5E41E419A99CD100B876DA /* UITextView+TCCustomFont.m */,
+			);
+			path = CanvasLibrary;
+			sourceTree = "<group>";
+		};
 		7FE14D8C1930330100517D5D /* RESideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +323,7 @@
 		7FE14D9D19304D6B00517D5D /* External Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				7F5E41CF19A99CD100B876DA /* Canvas */,
 				7FE14D9E19304D7700517D5D /* STHTTPRequest.h */,
 				7FE14D9F19304D7700517D5D /* STHTTPRequest.m */,
 			);
@@ -271,11 +337,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3076CDF01809B47200527E6C /* Build configuration list for PBXNativeTarget "iOSTemplate" */;
 			buildPhases = (
-				29E74BA9748A456B9714D614 /* Check Pods Manifest.lock */,
 				3076CDBA1809B47200527E6C /* Sources */,
 				3076CDBB1809B47200527E6C /* Frameworks */,
 				3076CDBC1809B47200527E6C /* Resources */,
-				5F4BE6A29B8D4CAB947B1EAF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,6 +409,8 @@
 			files = (
 				3076CDDA1809B47200527E6C /* Images.xcassets in Resources */,
 				3076CDCC1809B47200527E6C /* InfoPlist.strings in Resources */,
+				7F5E41F219A99CD100B876DA /* README.md in Resources */,
+				7F5E41F119A99CD100B876DA /* LICENSE in Resources */,
 				3076CDD51809B47200527E6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,39 +424,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		29E74BA9748A456B9714D614 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5F4BE6A29B8D4CAB947B1EAF /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		3076CDBA1809B47200527E6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -399,15 +432,25 @@
 				7FE14D941930330100517D5D /* RESideMenu.m in Sources */,
 				3076CE021809B59E00527E6C /* MARMenuViewController.m in Sources */,
 				3076CE011809B59E00527E6C /* MARHomeViewController.m in Sources */,
+				7F5E41EC19A99CD100B876DA /* UILabel+TCCustomFont.m in Sources */,
 				3076CDCE1809B47200527E6C /* main.m in Sources */,
 				3076CDD21809B47200527E6C /* MARAppDelegate.m in Sources */,
+				7F5E41E819A99CD100B876DA /* CSAnimationView.m in Sources */,
 				3076CE051809B59E00527E6C /* MARProfileViewController.m in Sources */,
+				7F5E41E719A99CD100B876DA /* CSAnimation.m in Sources */,
+				7F5E41EE19A99CD100B876DA /* UITextField+PlaceholderColor.m in Sources */,
 				7FE14DA019304D7700517D5D /* STHTTPRequest.m in Sources */,
+				7F5E41EF19A99CD100B876DA /* UITextField+TCCustomFont.m in Sources */,
+				7F5E41E919A99CD100B876DA /* CSBlurView.m in Sources */,
 				7FE14D98193039AC00517D5D /* UIColor+CoolColors.m in Sources */,
 				7FE14D9B1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m in Sources */,
 				3076CE041809B59E00527E6C /* MARCoordinatorViewController.m in Sources */,
+				7F5E41EA19A99CD100B876DA /* CSNavigationController.m in Sources */,
 				7FE14D931930330100517D5D /* RECommonFunctions.m in Sources */,
+				7F5E41F019A99CD100B876DA /* UITextView+TCCustomFont.m in Sources */,
+				7F5E41EB19A99CD100B876DA /* UIButton+TCCustomFont.m in Sources */,
 				7FE14D951930330100517D5D /* UIViewController+RESideMenu.m in Sources */,
+				7F5E41ED19A99CD100B876DA /* UINavigationBar+TCCustomFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +563,6 @@
 		};
 		3076CDF11809B47200527E6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A6C1B6B8BEC456C9E23258E /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -540,7 +582,6 @@
 		};
 		3076CDF21809B47200527E6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A6C1B6B8BEC456C9E23258E /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

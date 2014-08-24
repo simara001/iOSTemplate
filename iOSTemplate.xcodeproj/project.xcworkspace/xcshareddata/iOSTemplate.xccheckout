@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>0AD11CFF-B02F-457E-9707-83397B8BB867</string>
+	<string>6C757900-16DA-44FF-9B4D-BB1902FB72EF</string>
 	<key>IDESourceControlProjectName</key>
 	<string>iOSTemplate</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E31F0432-4F25-4EE8-91F5-42A3808B57F3</key>
-		<string>https://github.com/simara001/iOSTemplate.git</string>
+		<key>16E7DFF7-24EF-4348-B9BE-140CA89679CB</key>
+		<string>ssh://bitbucket.org/simara001/second-chance.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iOSTemplate.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E31F0432-4F25-4EE8-91F5-42A3808B57F3</key>
+		<key>16E7DFF7-24EF-4348-B9BE-140CA89679CB</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/simara001/iOSTemplate.git</string>
+	<string>ssh://bitbucket.org/simara001/second-chance.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E31F0432-4F25-4EE8-91F5-42A3808B57F3</string>
+	<string>16E7DFF7-24EF-4348-B9BE-140CA89679CB</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E31F0432-4F25-4EE8-91F5-42A3808B57F3</string>
+			<string>16E7DFF7-24EF-4348-B9BE-140CA89679CB</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iOSTemplate</string>
 		</dict>

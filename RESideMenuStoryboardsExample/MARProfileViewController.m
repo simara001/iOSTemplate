@@ -7,7 +7,7 @@
 //
 
 #import "MARProfileViewController.h"
-#import <CSAnimationView.h>
+#import "CSAnimationView.h"
 #import "UIColor+CoolColors.h"
 #import "NSObject+PerformBlockAfterDelay.h"
 
