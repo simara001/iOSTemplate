@@ -7,6 +7,7 @@
 //
 
 #import "MARHomeViewController.h"
+#import "MARLoginViewController.h"
 #import "UIColor+CoolColors.h"
 #import "STHTTPRequest.h"
 #import <Parse/Parse.h>
@@ -31,18 +32,11 @@
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
     [self callDilbert];
     
-    /* * * * * * * * * * * * * * * * *
-     * Logging In with Demo User to
-     * Parse
-     * * * * * * * * * * * * * * * * */
-    [PFUser logInWithUsernameInBackground:@"myname" password:@"mypass"
-                                    block:^(PFUser *user, NSError *error) {
-                                        if (user) {
-                                            // Do stuff after successful login.
-                                        } else {
-                                            // The login failed. Check error to see why.
-                                        }
-                                    }];
+
+    if ([PFUser currentUser]) {
+        MARLoginViewController *login = [self.storyboard instantiateViewControllerWithIdentifier:@"loginView"];
+        [self.navigationController presentViewController:login animated:YES completion:nil];
+    }
 }
 
 

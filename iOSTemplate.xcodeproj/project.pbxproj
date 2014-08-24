@@ -34,6 +34,7 @@
 		7F5E41F019A99CD100B876DA /* UITextView+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41E419A99CD100B876DA /* UITextView+TCCustomFont.m */; };
 		7F5E41F119A99CD100B876DA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7F5E41E519A99CD100B876DA /* LICENSE */; };
 		7F5E41F219A99CD100B876DA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7F5E41E619A99CD100B876DA /* README.md */; };
+		7F5E41F519AA4E7700B876DA /* MARLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41F419AA4E7700B876DA /* MARLoginViewController.m */; };
 		7FE14D931930330100517D5D /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D8E1930330100517D5D /* RECommonFunctions.m */; };
 		7FE14D941930330100517D5D /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D901930330100517D5D /* RESideMenu.m */; };
 		7FE14D951930330100517D5D /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D921930330100517D5D /* UIViewController+RESideMenu.m */; };
@@ -110,6 +111,8 @@
 		7F5E41E419A99CD100B876DA /* UITextView+TCCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+TCCustomFont.m"; sourceTree = "<group>"; };
 		7F5E41E519A99CD100B876DA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7F5E41E619A99CD100B876DA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		7F5E41F319AA4E7700B876DA /* MARLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MARLoginViewController.h; sourceTree = "<group>"; };
+		7F5E41F419AA4E7700B876DA /* MARLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARLoginViewController.m; sourceTree = "<group>"; };
 		7FE14D8D1930330100517D5D /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
 		7FE14D8E1930330100517D5D /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
 		7FE14D8F1930330100517D5D /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
@@ -255,6 +258,8 @@
 				3076CDFE1809B59E00527E6C /* MARCoordinatorViewController.m */,
 				3076CDFF1809B59E00527E6C /* MARProfileViewController.h */,
 				3076CE001809B59E00527E6C /* MARProfileViewController.m */,
+				7F5E41F319AA4E7700B876DA /* MARLoginViewController.h */,
+				7F5E41F419AA4E7700B876DA /* MARLoginViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -444,6 +449,7 @@
 				7F5E41E919A99CD100B876DA /* CSBlurView.m in Sources */,
 				7FE14D98193039AC00517D5D /* UIColor+CoolColors.m in Sources */,
 				7FE14D9B1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m in Sources */,
+				7F5E41F519AA4E7700B876DA /* MARLoginViewController.m in Sources */,
 				3076CE041809B59E00527E6C /* MARCoordinatorViewController.m in Sources */,
 				7F5E41EA19A99CD100B876DA /* CSNavigationController.m in Sources */,
 				7FE14D931930330100517D5D /* RECommonFunctions.m in Sources */,

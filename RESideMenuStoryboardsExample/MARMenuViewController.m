@@ -10,6 +10,7 @@
 #import "MARHomeViewController.h"
 #import "MARProfileViewController.h"
 #import "UIViewController+RESideMenu.h"
+#import <Parse/Parse.h>
 #import "UIColor+CoolColors.h"
 
 @interface MARMenuViewController ()
@@ -57,6 +58,14 @@
             navigationController.viewControllers = @[[self.storyboard instantiateViewControllerWithIdentifier:@"MARProfileViewController"]];
             [self.sideMenuViewController hideMenuViewController];
             break;
+        case 4: {
+            NSLog(@"Logging out");
+            [PFUser logOut];
+            PFUser *currentUser = [PFUser currentUser];
+            NSLog(@"Current user should be nil: %@", currentUser);
+            [self.sideMenuViewController hideMenuViewController];
+            break;
+        }
         default:
             break;
     }
