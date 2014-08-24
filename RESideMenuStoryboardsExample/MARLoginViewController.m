@@ -7,6 +7,7 @@
 //
 
 #import "MARLoginViewController.h"
+#import "UIAlertView+Additions.h"
 #import <Parse/Parse.h>
 
 @interface MARLoginViewController ()
@@ -38,25 +39,73 @@
 }
 
 - (IBAction)loginWithEmail:(id)sender {
+    if (self.textUsername.text.length == 0 || self.textPassword.text.length == 0) {
+        [UIAlertView presentWithTitle:@"Oooops"
+                              message:@"You need to fill your email & password, before logging in."
+                              buttons:@[@"Ok"]
+                        buttonHandler:nil];
+
+    }
     [PFUser logInWithUsernameInBackground:self.textUsername.text password:self.textPassword.text
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                             [self dismissViewControllerAnimated:YES completion:nil];
                                         } else {
-                                            NSString *alertMessage = @"";
                                             if (self.textUsername.text.length > 0 && self.textPassword.text.length > 0) {
-                                                alertMessage = @"It seems like you haven't registered with this email, do you want to Sign Up with this email?";
+                                                [UIAlertView presentWithTitle:@"Oooops"
+                                                                      message:@"It seems like you are not registered with this email, do you want to Sign Up with this email?"
+                                                                      buttons:@[@"Cancel", @"Ok"]
+                                                                buttonHandler:^(NSUInteger index){
+                                                                    NSLog(@"Not old user: %d", index);
+                                                                    if (index == 1) {
+                                                                        [self signUpWithCurrentEmailAndPassword];
+                                                                    }
+                                                                }];
                                             } else {
-                                                alertMessage = @"You need to fill your email & password";
+                                                
                                             }
-                                            
-                                            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oooops"
-                                                                                            message:alertMessage
-                                                                                           delegate:self
-                                                                                  cancelButtonTitle:@"Cancel"
-                                                                                  otherButtonTitles:@"Ok", nil];
-                                            [alert show];
                                         }
                                     }];
 }
+
+- (void)signUpWithCurrentEmailAndPassword {
+    PFUser *user = [PFUser user];
+    user.username = self.textUsername.text;
+    user.password = self.textPassword.text;
+    user.email = self.textUsername.text;
+    
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {
+            
+        } else {
+            // Show the errorString somewhere and let the user try again.
+        }
+    }];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if ((self.textUsername.text.length > 0 && self.textPassword.text.length > 0) && buttonIndex == 1) {
+        PFUser *user = [PFUser user];
+        user.username = self.textUsername.text;
+        user.password = self.textPassword.text;
+        user.email = self.textUsername.text;
+        
+        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (!error) {
+                
+            } else {
+                // Show the errorString somewhere and let the user try again.
+            }
+        }];
+    }
+}
+
+/* * * * * * * * * * * * * * * * *
+ * Dismiss Keyboard
+ * * * * * * * * * * * * * * * * */
+- (IBAction)dismissKeyboard:(id)sender {
+    [self.textUsername resignFirstResponder];
+    [self.textPassword resignFirstResponder];
+}
+
 @end

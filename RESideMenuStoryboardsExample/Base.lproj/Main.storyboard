@@ -95,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hdw-xj-ZPv">
-                                <rect key="frame" x="104" y="264" width="113" height="30"/>
+                                <rect key="frame" x="104" y="194" width="113" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login with Email">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -118,6 +118,10 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Jzw-NE-rR8" appends="YES" id="h1c-Rp-ebu"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="textPassword" destination="zZa-qg-zcX" id="aCC-Vm-C0L"/>
@@ -125,6 +129,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLX-us-uMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Jzw-NE-rR8">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="yLU-h9-axI" id="sQm-fh-95w"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="431" y="979"/>
         </scene>

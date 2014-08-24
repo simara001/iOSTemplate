@@ -30,7 +30,7 @@
      * * * * * * * * * * * * * * * * */
     [self.navigationController.navigationBar setBarTintColor:[UIColor coolPurple]];
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
-    [self callDilbert];
+//    [self callDilbert];
     
 
     if ([PFUser currentUser]) {

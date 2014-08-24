@@ -35,6 +35,7 @@
 		7F5E41F119A99CD100B876DA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7F5E41E519A99CD100B876DA /* LICENSE */; };
 		7F5E41F219A99CD100B876DA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7F5E41E619A99CD100B876DA /* README.md */; };
 		7F5E41F519AA4E7700B876DA /* MARLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41F419AA4E7700B876DA /* MARLoginViewController.m */; };
+		7F5E41F819AA967900B876DA /* UIAlertView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41F719AA967900B876DA /* UIAlertView+Additions.m */; };
 		7FE14D931930330100517D5D /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D8E1930330100517D5D /* RECommonFunctions.m */; };
 		7FE14D941930330100517D5D /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D901930330100517D5D /* RESideMenu.m */; };
 		7FE14D951930330100517D5D /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D921930330100517D5D /* UIViewController+RESideMenu.m */; };
@@ -113,6 +114,8 @@
 		7F5E41E619A99CD100B876DA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		7F5E41F319AA4E7700B876DA /* MARLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MARLoginViewController.h; sourceTree = "<group>"; };
 		7F5E41F419AA4E7700B876DA /* MARLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARLoginViewController.m; sourceTree = "<group>"; };
+		7F5E41F619AA967900B876DA /* UIAlertView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Additions.h"; sourceTree = "<group>"; };
+		7F5E41F719AA967900B876DA /* UIAlertView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Additions.m"; sourceTree = "<group>"; };
 		7FE14D8D1930330100517D5D /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
 		7FE14D8E1930330100517D5D /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
 		7FE14D8F1930330100517D5D /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
@@ -321,6 +324,8 @@
 				7FE14D97193039AC00517D5D /* UIColor+CoolColors.m */,
 				7FE14D991930413B00517D5D /* NSObject+PerformBlockAfterDelay.h */,
 				7FE14D9A1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m */,
+				7F5E41F619AA967900B876DA /* UIAlertView+Additions.h */,
+				7F5E41F719AA967900B876DA /* UIAlertView+Additions.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -455,6 +460,7 @@
 				7FE14D931930330100517D5D /* RECommonFunctions.m in Sources */,
 				7F5E41F019A99CD100B876DA /* UITextView+TCCustomFont.m in Sources */,
 				7F5E41EB19A99CD100B876DA /* UIButton+TCCustomFont.m in Sources */,
+				7F5E41F819AA967900B876DA /* UIAlertView+Additions.m in Sources */,
 				7FE14D951930330100517D5D /* UIViewController+RESideMenu.m in Sources */,
 				7F5E41ED19A99CD100B876DA /* UINavigationBar+TCCustomFont.m in Sources */,
 			);

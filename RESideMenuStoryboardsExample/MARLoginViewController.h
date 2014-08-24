@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MARLoginViewController : UIViewController
+@interface MARLoginViewController : UIViewController <UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textUsername;
 @property (weak, nonatomic) IBOutlet UITextField *textPassword;
 
 - (IBAction)loginWithEmail:(id)sender;
+- (IBAction)dismissKeyboard:(id)sender;
 
 @end
