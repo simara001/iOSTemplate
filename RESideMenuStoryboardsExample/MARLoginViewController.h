@@ -15,5 +15,7 @@
 
 - (IBAction)loginWithCurrentEmailAndPassword:(id)sender;
 - (IBAction)dismissKeyboard:(id)sender;
+- (IBAction)createNewUser:(id)sender;
+
 
 @end

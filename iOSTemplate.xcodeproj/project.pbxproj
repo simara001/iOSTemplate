@@ -36,6 +36,9 @@
 		7F5E41F219A99CD100B876DA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7F5E41E619A99CD100B876DA /* README.md */; };
 		7F5E41F519AA4E7700B876DA /* MARLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41F419AA4E7700B876DA /* MARLoginViewController.m */; };
 		7F5E41F819AA967900B876DA /* UIAlertView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E41F719AA967900B876DA /* UIAlertView+Additions.m */; };
+		7F5E420419AAAD2F00B876DA /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7F5E420119AAAD2F00B876DA /* SVProgressHUD.bundle */; };
+		7F5E420519AAAD2F00B876DA /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E420319AAAD2F00B876DA /* SVProgressHUD.m */; };
+		7F5E420819AAF2A200B876DA /* MARSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E420719AAF2A200B876DA /* MARSignUpViewController.m */; };
 		7FE14D931930330100517D5D /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D8E1930330100517D5D /* RECommonFunctions.m */; };
 		7FE14D941930330100517D5D /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D901930330100517D5D /* RESideMenu.m */; };
 		7FE14D951930330100517D5D /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE14D921930330100517D5D /* UIViewController+RESideMenu.m */; };
@@ -116,6 +119,12 @@
 		7F5E41F419AA4E7700B876DA /* MARLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARLoginViewController.m; sourceTree = "<group>"; };
 		7F5E41F619AA967900B876DA /* UIAlertView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Additions.h"; sourceTree = "<group>"; };
 		7F5E41F719AA967900B876DA /* UIAlertView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Additions.m"; sourceTree = "<group>"; };
+		7F5E420019AAAD2F00B876DA /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		7F5E420119AAAD2F00B876DA /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		7F5E420219AAAD2F00B876DA /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		7F5E420319AAAD2F00B876DA /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		7F5E420619AAF2A200B876DA /* MARSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MARSignUpViewController.h; sourceTree = "<group>"; };
+		7F5E420719AAF2A200B876DA /* MARSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARSignUpViewController.m; sourceTree = "<group>"; };
 		7FE14D8D1930330100517D5D /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
 		7FE14D8E1930330100517D5D /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
 		7FE14D8F1930330100517D5D /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
@@ -263,6 +272,8 @@
 				3076CE001809B59E00527E6C /* MARProfileViewController.m */,
 				7F5E41F319AA4E7700B876DA /* MARLoginViewController.h */,
 				7F5E41F419AA4E7700B876DA /* MARLoginViewController.m */,
+				7F5E420619AAF2A200B876DA /* MARSignUpViewController.h */,
+				7F5E420719AAF2A200B876DA /* MARSignUpViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -304,6 +315,17 @@
 			path = CanvasLibrary;
 			sourceTree = "<group>";
 		};
+		7F5E41FF19AAAD2F00B876DA /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				7F5E420019AAAD2F00B876DA /* SVProgressHUD-Prefix.pch */,
+				7F5E420119AAAD2F00B876DA /* SVProgressHUD.bundle */,
+				7F5E420219AAAD2F00B876DA /* SVProgressHUD.h */,
+				7F5E420319AAAD2F00B876DA /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		7FE14D8C1930330100517D5D /* RESideMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,6 +355,7 @@
 		7FE14D9D19304D6B00517D5D /* External Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				7F5E41FF19AAAD2F00B876DA /* SVProgressHUD */,
 				7F5E41CF19A99CD100B876DA /* Canvas */,
 				7FE14D9E19304D7700517D5D /* STHTTPRequest.h */,
 				7FE14D9F19304D7700517D5D /* STHTTPRequest.m */,
@@ -418,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3076CDDA1809B47200527E6C /* Images.xcassets in Resources */,
+				7F5E420419AAAD2F00B876DA /* SVProgressHUD.bundle in Resources */,
 				3076CDCC1809B47200527E6C /* InfoPlist.strings in Resources */,
 				7F5E41F219A99CD100B876DA /* README.md in Resources */,
 				7F5E41F119A99CD100B876DA /* LICENSE in Resources */,
@@ -444,6 +468,7 @@
 				3076CE011809B59E00527E6C /* MARHomeViewController.m in Sources */,
 				7F5E41EC19A99CD100B876DA /* UILabel+TCCustomFont.m in Sources */,
 				3076CDCE1809B47200527E6C /* main.m in Sources */,
+				7F5E420819AAF2A200B876DA /* MARSignUpViewController.m in Sources */,
 				3076CDD21809B47200527E6C /* MARAppDelegate.m in Sources */,
 				7F5E41E819A99CD100B876DA /* CSAnimationView.m in Sources */,
 				3076CE051809B59E00527E6C /* MARProfileViewController.m in Sources */,
@@ -451,6 +476,7 @@
 				7F5E41EE19A99CD100B876DA /* UITextField+PlaceholderColor.m in Sources */,
 				7FE14DA019304D7700517D5D /* STHTTPRequest.m in Sources */,
 				7F5E41EF19A99CD100B876DA /* UITextField+TCCustomFont.m in Sources */,
+				7F5E420519AAAD2F00B876DA /* SVProgressHUD.m in Sources */,
 				7F5E41E919A99CD100B876DA /* CSBlurView.m in Sources */,
 				7FE14D98193039AC00517D5D /* UIColor+CoolColors.m in Sources */,
 				7FE14D9B1930413B00517D5D /* NSObject+PerformBlockAfterDelay.m in Sources */,
