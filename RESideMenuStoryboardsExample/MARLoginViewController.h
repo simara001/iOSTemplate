@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *textUsername;
 @property (weak, nonatomic) IBOutlet UITextField *textPassword;
 
+- (IBAction)loginWithFacebook:(id)sender;
 - (IBAction)loginWithCurrentEmailAndPassword:(id)sender;
 - (IBAction)dismissKeyboard:(id)sender;
 - (IBAction)createNewUser:(id)sender;
