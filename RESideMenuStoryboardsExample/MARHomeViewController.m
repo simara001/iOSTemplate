@@ -30,13 +30,41 @@
      * * * * * * * * * * * * * * * * */
     [self.navigationController.navigationBar setBarTintColor:[UIColor coolPurple]];
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
-//    [self callDilbert];
     
 
     if ([PFUser currentUser]) {
         MARLoginViewController *login = [self.storyboard instantiateViewControllerWithIdentifier:@"loginView"];
         [self.navigationController presentViewController:login animated:YES completion:nil];
     }
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [self _loadData];
+}
+
+- (void)_loadData {
+    // ...
+    NSLog(@"Requesting");
+    FBRequest *request = [FBRequest requestForMe];
+    [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+        if (!error) {
+            // result is a dictionary with the user's Facebook data
+            NSDictionary *userData = (NSDictionary *)result;
+            NSLog(@"MAR Dic: %@", userData);
+            
+//            NSString *facebookID = userData[@"id"];
+//            NSString *name = userData[@"name"];
+//            NSString *location = userData[@"location"][@"name"];
+//            NSString *gender = userData[@"gender"];
+//            NSString *birthday = userData[@"birthday"];
+//            NSString *relationship = userData[@"relationship_status"];
+//            
+//            NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID]];
+            
+            // Now add the data to the UI elements
+            // ...
+        }
+    }];
 }
 
 
